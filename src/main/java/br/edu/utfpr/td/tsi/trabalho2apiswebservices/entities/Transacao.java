@@ -1,12 +1,22 @@
 package br.edu.utfpr.td.tsi.trabalho2apiswebservices.entities;
 
-public class Transacao {
+import java.io.Serializable;
+
+public class Transacao implements Serializable {
 
     private Long codigo;
     private String cedente;
     private String pagador;
     private Double valor;
     private String vencimento;
+
+    public Transacao(Long codigo, String cedente, String pagador, Double valor, String vencimento) {
+        this.codigo = codigo;
+        this.cedente = cedente;
+        this.pagador = pagador;
+        this.valor = valor;
+        this.vencimento = vencimento;
+    }
 
     public Long getCodigo() {
         return codigo;
