@@ -11,7 +11,6 @@ public class RabbitMQConfig {
 
     @Bean
     public Queue queue() {
-        // Define a fila transacoes.financeiras como durável [cite: 19]
         return new Queue(QUEUE_NAME, true);
     }
 

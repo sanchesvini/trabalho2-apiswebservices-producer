@@ -19,7 +19,7 @@ public class TransacaoProducer {
     private String csvFile;
 
     public void lerCsv() {
-        // Caminho do arquivo CSV (ajuste conforme onde você salvar o arquivo)
+
         String line;
         String cvsSplitBy = ",";
 
